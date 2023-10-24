@@ -50,9 +50,6 @@ class Window(FramelessWindow):
 
         self.init_window()
 
-        # self.navigationInterface.panel.displayMode = NavigationDisplayMode.MINIMAL
-        # self.navigationInterface.panel.toggle()
-
     def init_layout(self):
         self.hBoxLayout.setSpacing(0)
         self.hBoxLayout.setContentsMargins(0, self.titleBar.height(), 0, 0)
@@ -96,7 +93,7 @@ class Window(FramelessWindow):
         # self.navigationInterface.setCollapsible(False)
 
     def init_window(self):
-        self.resize(900, 700)
+        self.resize(1200, 900)
         self.setWindowIcon(QIcon(os.path.join(os.path.dirname(__file__), 'resource/Logo-small.png')))
         self.setWindowTitle('AMF - Centre d\'Information')
         self.titleBar.setAttribute(Qt.WA_StyledBackground)

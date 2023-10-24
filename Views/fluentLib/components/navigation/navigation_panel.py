@@ -474,7 +474,7 @@ class NavigationPanel(QFrame):
         self.expandAni.setStartValue(
             QRect(self.pos(), QSize(self.width(), self.height())))
         self.expandAni.setEndValue(
-            QRect(self.pos(), QSize(48, self.height())))
+            QRect(self.pos(), QSize(60, self.height())))
         self.expandAni.setProperty('expand', False)
         self.expandAni.start()
 
