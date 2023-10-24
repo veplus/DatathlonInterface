@@ -1,14 +1,12 @@
 # coding:utf-8
 import os.path
-import sys
-from PyQt5.QtCore import Qt, QRect, QUrl
-from PyQt5.QtGui import QIcon, QPainter, QImage, QBrush, QColor, QFont, QDesktopServices, QPixmap
+from PyQt5.QtCore import Qt, QUrl
+from PyQt5.QtGui import QIcon, QDesktopServices
 from PyQt5.QtWidgets import QApplication, QFrame, QStackedWidget, QHBoxLayout, QLabel
 
-from qfluentwidgets import (NavigationInterface, NavigationItemPosition, NavigationWidget, MessageBox,
-                            isDarkTheme, setTheme, Theme, setThemeColor, qrouter, FluentWindow, NavigationAvatarWidget,
-                            NavigationDisplayMode)
-from qfluentwidgets import FluentIcon as FIF
+from Views.fluentLib import (NavigationInterface, NavigationItemPosition, MessageBox,
+                             isDarkTheme, NavigationAvatarWidget)
+from Views.fluentLib import FluentIcon as FIF
 from qframelesswindow import FramelessWindow, StandardTitleBar
 
 

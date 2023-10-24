@@ -18,7 +18,7 @@ class HuePanel(QWidget):
     def __init__(self, color=QColor(255, 0, 0), parent=None):
         super().__init__(parent=parent)
         self.setFixedSize(256, 256)
-        self.huePixmap = QPixmap(":/qfluentwidgets/images/color_dialog/HuePanel.png")
+        self.huePixmap = QPixmap(":/fluentLib/images/color_dialog/HuePanel.png")
         self.setColor(color)
 
     def mousePressEvent(self, e):

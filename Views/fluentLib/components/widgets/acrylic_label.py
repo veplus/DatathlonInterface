@@ -20,7 +20,7 @@ except ImportError as e:
 def checkAcrylicAvailability():
     if not isAcrylicAvailable:
         warnings.warn(
-            '`AcrylicLabel` is not supported in current qfluentwidgets, use `pip install Views[full]` to enable it.')
+            '`AcrylicLabel` is not supported in current fluentLib, use `pip install Views[full]` to enable it.')
 
     return isAcrylicAvailable
 
@@ -74,7 +74,7 @@ class AcrylicTextureLabel(QLabel):
         self.tintColor = QColor(tintColor)
         self.luminosityColor = QColor(luminosityColor)
         self.noiseOpacity = noiseOpacity
-        self.noiseImage = QImage(':/qfluentwidgets/images/acrylic/noise.png')
+        self.noiseImage = QImage(':/fluentLib/images/acrylic/noise.png')
         self.setAttribute(Qt.WA_TranslucentBackground)
 
     def setTintColor(self, color: QColor):
@@ -168,7 +168,7 @@ class AcrylicBrush:
         self.tintColor = QColor(tintColor)
         self.luminosityColor = QColor(luminosityColor)
         self.noiseOpacity = noiseOpacity
-        self.noiseImage = QImage(':/qfluentwidgets/images/acrylic/noise.png')
+        self.noiseImage = QImage(':/fluentLib/images/acrylic/noise.png')
         self.originalImage = QPixmap()
         self.image = QPixmap()
 
